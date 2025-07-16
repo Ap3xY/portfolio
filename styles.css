@@ -1,0 +1,8 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: hsl(220, 15%, 15%);
+  color: hsl(0, 0%, 95%);
+}
+
+/* secondary text color hsl(0, 0%, 70%) Muted Gray*/
