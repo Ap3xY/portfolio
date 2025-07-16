@@ -3,6 +3,8 @@ body {
   padding: 0px;
   background-color: hsl(220, 15%, 15%);
   color: hsl(0, 0%, 95%);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
 }
 
 /* secondary text color hsl(0, 0%, 70%) Muted Gray*/
