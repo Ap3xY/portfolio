@@ -18,7 +18,7 @@ body {
 h1,
 h2,
 p {
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
   margin: 0;
@@ -33,13 +33,14 @@ a {
 .main-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 3rem;
   gap: 8rem;
   flex: 1;
 }
 
 .hero-container {
-  width: 22rem;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -52,7 +53,7 @@ a {
 }
 
 .hero-heading {
-  font-size: 42px;
+  font-size: 50px;
   font-weight: 700;
 }
 
@@ -66,7 +67,7 @@ a {
 }
 
 .hero-socials-container {
-  font-size: 22px;
+  font-size: 24px;
   display: flex;
   gap: 1rem;
 }
