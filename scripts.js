@@ -41,7 +41,7 @@ experienceContainer.innerHTML = experienceHTML.join("");
 
 export const projectsData = [
   {
-    imageLink: "https://placehold.co/150x80",
+    imageLink: "https://placehold.co/200x100",
     name: "Portfolio",
     description: "Website to showcase my projects and experience",
     techStack: ["HTML", "CSS", "Javascript"],
@@ -49,7 +49,7 @@ export const projectsData = [
     githubLink: "",
   },
   {
-    imageLink: "https://placehold.co/150x80",
+    imageLink: "https://placehold.co/200x100",
     name: "Servy",
     description:
       "a Simple web-server built using Elixir and Erlang to help me understand the fundamentals of functional programming and the Elixir Languages",
@@ -58,7 +58,7 @@ export const projectsData = [
     githubLink: "",
   },
   {
-    imageLink: "https://placehold.co/150x80",
+    imageLink: "https://placehold.co/200x100",
     name: "Studio Game",
     description:
       "a Simple ruby cli game to help me understand the fundamentals of OOP programming and the Ruby Language",
@@ -67,7 +67,7 @@ export const projectsData = [
     githubLink: "",
   },
   {
-    imageLink: "https://placehold.co/150x80",
+    imageLink: "https://placehold.co/200x100",
     name: "Heads Up",
     description:
       "a Phoenix web app to help me understand the Phoenix Framework",
@@ -76,7 +76,7 @@ export const projectsData = [
     githubLink: "",
   },
   {
-    imageLink: "https://placehold.co/150x80",
+    imageLink: "https://placehold.co/200x100",
     name: "Rails Studio",
     description:
       "a Rails web app for movie reviews to help me understand The Rails Framework",
@@ -92,7 +92,7 @@ const projectsHTML = projectsData.map((item) => {
   return `
         <div class="project-item">
             <div class="project-image-container">
-              <img src=${item.imageLink} width="150" height="80">
+              <img src=${item.imageLink} width="200" height="100">
             </div>
             <div class="projects-item-text-container">
               <h2 class="projects-item-name">${item.name}</h2>

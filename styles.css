@@ -40,6 +40,7 @@ a {
 }
 
 .hero-container {
+  max-width: 24rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -187,7 +188,7 @@ a {
 
 @media (max-width: 768px) {
   .project-item {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1rem;
   }
 }
