@@ -69,16 +69,18 @@ export const projectsData = [
   {
     image: "",
     name: "Heads Up",
-    description: "a Phoenix web app",
-    techStack: ["Ruby"],
+    description:
+      "a Phoenix web app to help me understand the Phoenix Framework",
+    techStack: ["Phoenix", "Elixir"],
     link: "",
     githubLink: "",
   },
   {
     image: "",
     name: "Rails Studio",
-    description: "a Rails web app for movie reviews",
-    techStack: ["Ruby"],
+    description:
+      "a Rails web app for movie reviews to help me understand The Rails Framework",
+    techStack: ["Rails", "Ruby"],
     link: "",
     githubLink: "",
   },
