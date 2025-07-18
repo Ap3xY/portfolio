@@ -41,47 +41,47 @@ experienceContainer.innerHTML = experienceHTML.join("");
 
 export const projectsData = [
   {
-    image: "",
+    imageLink: "https://placehold.co/150x80",
     name: "Portfolio",
     description: "Website to showcase my projects and experience",
     techStack: ["HTML", "CSS", "Javascript"],
-    link: "",
+    deployedLink: "",
     githubLink: "",
   },
   {
-    image: "",
+    imageLink: "https://placehold.co/150x80",
     name: "Servy",
     description:
       "a Simple web-server built using Elixir and Erlang to help me understand the fundamentals of functional programming and the Elixir Languages",
     techStack: ["Elixir"],
-    link: "",
+    deployedLink: "",
     githubLink: "",
   },
   {
-    image: "",
+    imageLink: "https://placehold.co/150x80",
     name: "Studio Game",
     description:
       "a Simple ruby cli game to help me understand the fundamentals of OOP programming and the Ruby Language",
     techStack: ["Ruby"],
-    link: "",
+    deployedLink: "",
     githubLink: "",
   },
   {
-    image: "",
+    imageLink: "https://placehold.co/150x80",
     name: "Heads Up",
     description:
       "a Phoenix web app to help me understand the Phoenix Framework",
     techStack: ["Phoenix", "Elixir"],
-    link: "",
+    deployedLink: "",
     githubLink: "",
   },
   {
-    image: "",
+    imageLink: "https://placehold.co/150x80",
     name: "Rails Studio",
     description:
       "a Rails web app for movie reviews to help me understand The Rails Framework",
-    techStack: ["Rails", "Ruby"],
-    link: "",
+    techStack: ["Ruby", "Rails"],
+    deployedLink: "",
     githubLink: "",
   },
 ];
@@ -90,12 +90,19 @@ const projectsContainer = document.querySelector(".projects-item-container");
 
 const projectsHTML = projectsData.map((item) => {
   return `
-        <div class="experience-item">
-            <h2 class="projects-item-name">${item.name}</h2>
-            <p class="projects-item-description">${item.description}</p>
-            <div class="projects-item-techStack">${item.techStack.join(
-              " "
-            )}</div>
+        <div class="project-item">
+            <div class="project-image-container">
+              <img src=${item.imageLink} width="150" height="80">
+            </div>
+            <div class="projects-item-text-container">
+              <h2 class="projects-item-name">${item.name}</h2>
+              <p class="projects-item-description">${item.description}</p>
+              <div class="projects-item-techStack">${item.techStack
+                .map((tech) => `<span class="tech-item">${tech}</span>`)
+                .join(" ")}
+              </div>
+            </div>
+
         </div>`;
 });
 

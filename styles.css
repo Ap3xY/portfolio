@@ -52,7 +52,7 @@ a {
 }
 
 .hero-heading {
-  font-size: 50px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -163,9 +163,48 @@ a {
   border-radius: 10px;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .projects-heading {
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.projects-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-item {
+  display: flex;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.projects-item-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projects-item-name {
+  font-weight: 700;
+}
+
+.projects-item-description {
+  font-size: 14px;
+  color: hsl(0, 0%, 60%);
 }
 
 .contact-heading {
