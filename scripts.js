@@ -4,13 +4,7 @@ export const experienceData = [
     title: "Junior Developer - PChoice",
     description:
       "Build and maintain the Official Celbux Vouchering Platform's frontend, implementing cutting each tool and best practices. Work closely with cross-functional teams, including developers, project managers and support teams, to implement and advocate for best practices in web development",
-    techStack: [
-      "Nextjs",
-      "Typescript",
-      "Tailwind",
-      "ShadCN",
-      "Google Cloud Platform",
-    ],
+    techStack: ["Nextjs", "Typescript", "Tailwind", "ShadCN", "GCP"],
   },
 
   {
@@ -29,10 +23,16 @@ const experienceContainer = document.querySelector(
 const experienceHTML = experienceData.map((item) => {
   return `
         <div class="experience-item">
-            <p class="experience-item-date">${item.date}</p>
-            <p class="experience-item-title">${item.title}</p>
-            <p class="experience-item-description">${item.description}</p>
-            <p class="experience-item-techStack">${item.techStack}</p>
+            <div>
+              <p class="experience-item-date">${item.date}</p>
+            </div>
+            <div class="experience-item-text-container">
+              <h2 class="experience-item-title">${item.title}</h2>
+              <p class="experience-item-description">${item.description}</p>
+              <p class="experience-item-techStack">${item.techStack
+                .map((tech) => `<span class="tech-item">${tech}</span>`)
+                .join(" ")}</p>
+            </div>
         </div>
     `;
 });
@@ -93,7 +93,9 @@ const projectsHTML = projectsData.map((item) => {
         <div class="experience-item">
             <h2 class="projects-item-name">${item.name}</h2>
             <p class="projects-item-description">${item.description}</p>
-            <div class="projects-item-techStack">${item.techStack}</div>
+            <div class="projects-item-techStack">${item.techStack.join(
+              " "
+            )}</div>
         </div>`;
 });
 
