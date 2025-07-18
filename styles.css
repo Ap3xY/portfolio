@@ -152,7 +152,7 @@ a {
 .experience-item-techStack {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .tech-item {
