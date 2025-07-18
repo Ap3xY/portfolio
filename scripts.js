@@ -3,7 +3,7 @@ export const experienceData = [
     date: "2023 — Present",
     title: "Junior Developer - PChoice",
     description:
-      "Build and maintain the Official Celbux Vouchering Platform's frontend, implementing cutting each tool and best practices. Work closely with cross-functional teams, including developers, project managers and support teams, to implement and advocate for best practices in web development",
+      "Build and maintain the Official Celbux Vouchering Platform's frontend, implementing cutting edge tools and best practices. Work closely with cross-functional teams, including developers, project managers and support teams, to implement and advocate for best practices in web development",
     techStack: ["Nextjs", "Typescript", "Tailwind", "ShadCN", "GCP"],
   },
 
