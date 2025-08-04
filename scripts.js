@@ -90,9 +90,13 @@ const projectsContainer = document.querySelector(".projects-item-container");
 const projectsHTML = projectsData.map((item) => {
   return `
         <div class="project-item">
+
+         <!--
             <div class="project-image-container">
               <img src=${item.imageLink} width="200" height="100">
             </div>
+          -->
+
             <div class="projects-item-text-container">
               <h2 class="projects-item-name">${item.name}</h2>
               <p class="projects-item-description">${item.description}</p>
