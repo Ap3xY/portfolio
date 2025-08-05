@@ -13,6 +13,7 @@ body {
   color: hsl(0, 0%, 80%);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  overflow-x: hidden;
 }
 
 h1,
@@ -30,11 +31,31 @@ a {
   color: hsl(0, 0%, 70%);
 }
 
+h1 {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .main-container {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 3rem 1rem;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3rem;
   gap: 8rem;
   flex: 1;
 }
@@ -208,9 +229,33 @@ a {
   color: hsl(0, 0%, 60%);
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .contact-heading {
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.contact-items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item-heading {
+  color: hsl(0, 0%, 60%);
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}
+
+.contact-item-paragraph {
+  font-size: 16px;
 }
 
 .footer-container {
