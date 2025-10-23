@@ -117,6 +117,6 @@ function downloadCsv() {
   console.log("downloading CSV...");
 }
 
-const downloadCsvBtn = document.getElementById("download-csv-btn");
+const downloadCvBtn = document.getElementById("download-csv-btn");
 
-downloadCsvBtn.addEventListener("click", downloadCsv);
+downloadCvBtn.addEventListener("click", downloadCsv);
