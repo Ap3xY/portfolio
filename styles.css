@@ -270,3 +270,15 @@ h2 {
 .website-stack {
   font-weight: 700;
 }
+
+.download-csv-btn {
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: aqua;
+  background-color: hsl(180, 50%, 20%);
+  border-radius: 8px;
+}
