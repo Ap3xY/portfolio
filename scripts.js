@@ -1,7 +1,7 @@
 export const experienceData = [
   {
     date: "2023 — Present",
-    title: "Junior Developer - PChoice",
+    title: "Web Developer - PChoice",
     description:
       "Build and maintain the Official Celbux Vouchering Platform's frontend, implementing cutting edge tools and best practices. Work closely with cross-functional teams, including developers, project managers and support teams, to implement and advocate for best practices in web development",
     techStack: ["Nextjs", "Typescript", "Tailwind", "ShadCN", "GCP"],
@@ -48,41 +48,41 @@ export const projectsData = [
     deployedLink: "",
     githubLink: "",
   },
-  {
-    imageLink: "https://placehold.co/200x100",
-    name: "Servy",
-    description:
-      "Simple web-server built using Elixir and Erlang to help me understand the fundamentals of functional programming and the Elixir Languages",
-    techStack: ["Elixir"],
-    deployedLink: "",
-    githubLink: "",
-  },
-  {
-    imageLink: "https://placehold.co/200x100",
-    name: "Studio Game",
-    description:
-      "Simple ruby cli game to help me understand the fundamentals of OOP programming and the Ruby Language",
-    techStack: ["Ruby"],
-    deployedLink: "",
-    githubLink: "",
-  },
-  {
-    imageLink: "https://placehold.co/200x100",
-    name: "Heads Up",
-    description: "Phoenix web app to help me understand the Phoenix Framework",
-    techStack: ["Phoenix", "Elixir"],
-    deployedLink: "",
-    githubLink: "",
-  },
-  {
-    imageLink: "https://placehold.co/200x100",
-    name: "Rails Studio",
-    description:
-      "Rails web app for movie reviews to help me understand The Rails Framework",
-    techStack: ["Ruby", "Rails"],
-    deployedLink: "",
-    githubLink: "",
-  },
+  // {
+  //   imageLink: "https://placehold.co/200x100",
+  //   name: "Servy",
+  //   description:
+  //     "Simple web-server built using Elixir and Erlang to help me understand the fundamentals of functional programming and the Elixir Languages",
+  //   techStack: ["Elixir"],
+  //   deployedLink: "",
+  //   githubLink: "",
+  // },
+  // {
+  //   imageLink: "https://placehold.co/200x100",
+  //   name: "Studio Game",
+  //   description:
+  //     "Simple ruby cli game to help me understand the fundamentals of OOP programming and the Ruby Language",
+  //   techStack: ["Ruby"],
+  //   deployedLink: "",
+  //   githubLink: "",
+  // },
+  // {
+  //   imageLink: "https://placehold.co/200x100",
+  //   name: "Heads Up",
+  //   description: "Phoenix web app to help me understand the Phoenix Framework",
+  //   techStack: ["Phoenix", "Elixir"],
+  //   deployedLink: "",
+  //   githubLink: "",
+  // },
+  // {
+  //   imageLink: "https://placehold.co/200x100",
+  //   name: "Rails Studio",
+  //   description:
+  //     "Rails web app for movie reviews to help me understand The Rails Framework",
+  //   techStack: ["Ruby", "Rails"],
+  //   deployedLink: "",
+  //   githubLink: "",
+  // },
 ];
 
 const projectsContainer = document.querySelector(".projects-item-container");
@@ -92,6 +92,8 @@ const projectsHTML = projectsData.map((item) => {
         <div class="project-item">
 
          <!--
+            This allows each project item to have a screenshot image
+
             <div class="project-image-container">
               <img src=${item.imageLink} width="200" height="100">
             </div>
