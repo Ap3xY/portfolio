@@ -113,10 +113,12 @@ const projectsHTML = projectsData.map((item) => {
 
 projectsContainer.innerHTML = projectsHTML.join("");
 
-function downloadCsv() {
+// TODO: Implement download CV logic
+
+function downloadCv() {
   console.log("downloading CSV...");
 }
 
 const downloadCvBtn = document.getElementById("download-csv-btn");
 
-downloadCvBtn.addEventListener("click", downloadCsv);
+downloadCvBtn.addEventListener("click", downloadCv);
