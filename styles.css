@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("assets/fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 html {
   height: 100%;
   margin: 0;
@@ -11,7 +29,7 @@ body {
   padding: 0;
   background-color: hsl(220, 15%, 15%);
   color: hsl(0, 0%, 80%);
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto";
   font-optical-sizing: auto;
   overflow-x: hidden;
 }

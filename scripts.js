@@ -115,7 +115,9 @@ projectsContainer.innerHTML = projectsHTML.join("");
 
 // TODO: Implement download CV logic
 
-function downloadCv() {}
+function downloadCv() {
+  window.open("assets/cv.md", "_blank");
+}
 
 const downloadCvBtn = document.getElementById("download-cv-btn");
 
