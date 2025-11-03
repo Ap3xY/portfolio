@@ -115,10 +115,8 @@ projectsContainer.innerHTML = projectsHTML.join("");
 
 // TODO: Implement download CV logic
 
-function downloadCv() {
-  console.log("downloading CSV...");
-}
+function downloadCv() {}
 
-const downloadCvBtn = document.getElementById("download-csv-btn");
+const downloadCvBtn = document.getElementById("download-cv-btn");
 
 downloadCvBtn.addEventListener("click", downloadCv);
