@@ -1,23 +1,10 @@
-export const experienceData = [
-  {
-    date: "2023 — Present",
-    title: "Web Developer - PChoice",
-    description:
-      "Build and maintain the Official Celbux Vouchering Platform's frontend, implementing cutting edge tools and best practices. Work closely with cross-functional teams, including developers, project managers and support teams, to implement and advocate for best practices in web development",
-    techStack: ["Nextjs", "Typescript", "Tailwind", "ShadCN", "GCP"],
-  },
+import { experienceData } from "./data/experience-data.js";
+import { projectsData } from "./data/projects-data.js";
 
-  {
-    date: "2020 — 2022",
-    title: "Technician - Mojo ICT",
-    description:
-      "Create and install cloud and local servers for clients like schools and small-business and provide onsite and remote support",
-    techStack: ["Linux", "Servers", "TeamViewer"],
-  },
-];
+// Code to generate the Experience Section
 
 const experienceContainer = document.querySelector(
-  ".experience-item-container"
+  ".experience-item-container",
 );
 
 const experienceHTML = experienceData.map((item) => {
@@ -39,51 +26,7 @@ const experienceHTML = experienceData.map((item) => {
 
 experienceContainer.innerHTML = experienceHTML.join("");
 
-export const projectsData = [
-  {
-    imageLink: "https://placehold.co/200x100",
-    name: "Portfolio",
-    description: "Website to showcase my projects and experience",
-    techStack: ["HTML", "CSS", "Javascript"],
-    deployedLink: "",
-    githubLink: "",
-  },
-  // {
-  //   imageLink: "https://placehold.co/200x100",
-  //   name: "Servy",
-  //   description:
-  //     "Simple web-server built using Elixir and Erlang to help me understand the fundamentals of functional programming and the Elixir Languages",
-  //   techStack: ["Elixir"],
-  //   deployedLink: "",
-  //   githubLink: "",
-  // },
-  // {
-  //   imageLink: "https://placehold.co/200x100",
-  //   name: "Studio Game",
-  //   description:
-  //     "Simple ruby cli game to help me understand the fundamentals of OOP programming and the Ruby Language",
-  //   techStack: ["Ruby"],
-  //   deployedLink: "",
-  //   githubLink: "",
-  // },
-  // {
-  //   imageLink: "https://placehold.co/200x100",
-  //   name: "Heads Up",
-  //   description: "Phoenix web app to help me understand the Phoenix Framework",
-  //   techStack: ["Phoenix", "Elixir"],
-  //   deployedLink: "",
-  //   githubLink: "",
-  // },
-  // {
-  //   imageLink: "https://placehold.co/200x100",
-  //   name: "Rails Studio",
-  //   description:
-  //     "Rails web app for movie reviews to help me understand The Rails Framework",
-  //   techStack: ["Ruby", "Rails"],
-  //   deployedLink: "",
-  //   githubLink: "",
-  // },
-];
+// Code to generate the Projects Section
 
 const projectsContainer = document.querySelector(".projects-item-container");
 
