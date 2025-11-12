@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/Ap3xY/portfolio/issues"
   },
-  "homepage": "https://github.com/Ap3xY/portfolio#readme",
-  "dependencies": {
-    "live-server": "^1.2.2"
-  }
+  "homepage": "https://github.com/Ap3xY/portfolio#readme"
 }
